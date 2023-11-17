@@ -8,12 +8,24 @@ import Home from "./routes/Home";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 const router =
-  createBrowserRouter[
+  createBrowserRouter([
     {
       path: "/",
       element: <Home></Home>,
+    },
+    {
+      path: "/recipes",
+      element: <p>recipes</p>
+    },
+    {
+      path: "/tips",
+      element: <p>tips</p>
+    },
+    {
+      path: "contact",
+      element: <p>contact</p>
     }
-  ];
+  ]);
 
 root.render(
   <React.StrictMode>
