@@ -1,12 +1,13 @@
-import React from 'react'
-import NavBar from '../components/NavBar'
+import React from "react";
+import NavBar from "../components/NavBar";
+import LatestRecipes from "../components/recipe_card/LatestRecipes";
 
 const Home = () => {
   return (
     <div>
-        <NavBar></NavBar>
+      <NavBar></NavBar>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
