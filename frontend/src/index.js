@@ -4,6 +4,9 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import Home from "./routes/Home";
+import Recipes from "./routes/Recipes";
+import Tips from "./routes/Tips";
+import Contact from "./routes/Contact";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -15,15 +18,15 @@ const router =
     },
     {
       path: "/recipes",
-      element: <p>recipes</p>
+      element: <Recipes></Recipes>
     },
     {
       path: "/tips",
-      element: <p>tips</p>
+      element: <Tips></Tips>
     },
     {
       path: "contact",
-      element: <p>contact</p>
+      element: <Contact></Contact>
     }
   ]);
 
