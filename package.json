@@ -1,0 +1,14 @@
+{
+  "name": "whiskedaway.io",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000w\u0000h\u0000i\u0000s\u0000k\u0000e\u0000d\u0000a\u0000w\u0000a\u0000y\u0000.\u0000i\u0000o\u0000\r\u0000 \u0000#\u0000 \u0000w\u0000h\u0000i\u0000s\u0000k\u0000e\u0000d\u0000a\u0000w\u0000a\u0000y\u0000.\u0000i\u0000o\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm start\" "
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
