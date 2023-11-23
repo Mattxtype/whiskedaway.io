@@ -18,3 +18,19 @@ exports.postAddRecipe = (req, res, next) => {
       console.log(err);
     });
 };
+
+exports.getLatestRecipe = (req, res) => {
+     Recipe.find().sort({ _id: -1 }).limit(2)
+     .then(recipes => {
+        res.status(200).json({
+            recipes: recipes.map((recipe) => ({
+                title: recipe.title,
+                imageId: recipe.imageId
+            })),
+        });
+        console.log("fetch Latest recipes");
+     })
+     .catch((err) => {
+        console.log(err);
+     })
+}
