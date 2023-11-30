@@ -9,6 +9,7 @@ const morgan = require("morgan");
 const app = express();
 
 const recipeRoutes = require("./routes/recipes");
+const tipRoutes = require("./routes/tips");
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
@@ -28,6 +29,8 @@ const accessLogStream = fs.createWriteStream(
 app.use(morgan('combined', { stream: accessLogStream }));
 
 app.use('/recipe', recipeRoutes);
+
+app.use('/tip', tipRoutes);
 
 mongoose
   .connect(
