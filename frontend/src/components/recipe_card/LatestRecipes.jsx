@@ -1,7 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 import React from "react";
 import RecipeCard from "./RecipeCard";
-import { fetchLatestRecipes } from "../../util/http";
+import { fetchLatestRecipes } from "../../api/recipeApi";
 
 const LatestRecipes = () => {
   const { data, isError, error } = useQuery({
