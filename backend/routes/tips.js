@@ -4,10 +4,10 @@ const tipsController = require('../controllers/tipsController');
 
 const router = express.Router();
 
-// /recipe/add-recipe => POST
+// /tip/add-recipe => POST
 router.post('/add-tip', tipsController.postAddTip);
 
-// /recipe/get-random-tip => GET
+// /tip/get-random-tip => GET
 router.get('/get-random-tip', tipsController.getRandomTip);
 
 module.exports = router;

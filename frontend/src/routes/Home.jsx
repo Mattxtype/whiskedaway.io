@@ -1,7 +1,6 @@
 import React from "react";
 import NavBar from "../components/NavBar";
 import LatestRecipes from "../components/recipe_card/LatestRecipes";
-import TipsCard from "../components/tips_card/TipsCard";
 
 const Home = () => {
   return (
