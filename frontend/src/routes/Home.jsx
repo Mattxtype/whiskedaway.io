@@ -1,6 +1,6 @@
 import React from "react";
-import NavBar from "../components/NavBar";
 import LatestRecipes from "../components/recipe_card/LatestRecipes";
+import NavBar from "../components/NavBar";
 
 const Home = () => {
   return (
