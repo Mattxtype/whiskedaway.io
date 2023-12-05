@@ -4,7 +4,7 @@ const tipsController = require('../controllers/tipsController');
 
 const router = express.Router();
 
-// /tip/add-recipe => POST
+// /tip/add-tip => POST
 router.post('/add-tip', tipsController.postAddTip);
 
 // /tip/get-random-tip => GET

@@ -32,8 +32,8 @@ const TipsCard = () => {
           <h2 className="m-5 text-xl text-black/50 font-medium">
             {title}
           </h2>
-          <p className="mt-10 mx-10 text-left font-bold">
-            {description}
+          <p className="mx-20 text-left font-bold">
+            {description}...
           </p>
           <div className="flex grow justify-center">
             <button className="self-end mb-10"> Read More </button>
