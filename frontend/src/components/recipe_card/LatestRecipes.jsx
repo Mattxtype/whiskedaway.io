@@ -25,7 +25,7 @@ const LatestRecipes = () => {
     );
   }
   return (
-    <div className="flex flex-col  m-4 w-1/2">
+    <div className="flex flex-col w-full my-4 ml-4">
       <h1 className="flex justify-center mt-2 font-bold">Latest Recipes</h1>
       <div className="flex flex-row justify-center">{content}</div>
     </div>
