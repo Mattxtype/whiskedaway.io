@@ -18,7 +18,9 @@ services:
     ports:
       - '3000:3000'
     volumes:
-      - ./frontend/src:/app/src
+      - ./frontend:/app
+      - /app/node_modules
+      - /app/.next
     stdin_open: true
     tty: true
     depends_on:

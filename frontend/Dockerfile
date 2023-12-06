@@ -2,7 +2,7 @@ FROM node
 
 WORKDIR /app
 
-COPY package.json .
+COPY package*.json ./
 
 RUN npm install
 
@@ -12,4 +12,4 @@ ENV CHOKIDAR_USEPOLLING=true
 
 EXPOSE 3000
 
-CMD ["npm", "start"]
+CMD npm run dev
