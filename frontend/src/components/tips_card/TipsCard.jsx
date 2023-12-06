@@ -24,15 +24,15 @@ const TipsCard = () => {
 
   return (
     <>
-      <div className="flex flex-col max-w-lg my-6 mr-4">
-        <h1 className="flex justify-center text-2xl font-semibold tracking-wide antialiased">
-          Tip of the day
+      <div className="flex flex-col max-w-lg my-6 mr-4 ">
+        <h1 className="flex justify-center text-2xl font-semibold tracking-normal antialiased">
+          tip of the day
         </h1>
         <div className="flex flex-col border-black/60 border-2 rounded-3xl h-full w-full text-center mt-1 antialiased">
           <h2 className="m-5 text-xl text-black/50 font-medium">
             {title}
           </h2>
-          <p className="mx-20 text-left font-bold">
+          <p className="mx-20 text-left font-bold line-clamp-[9]">
             {description}...
           </p>
           <div className="flex grow justify-center">
