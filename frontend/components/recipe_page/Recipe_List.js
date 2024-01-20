@@ -18,7 +18,7 @@ const Recipe_List = () => {
 
   if(data) {
     content = (
-        <div className="grid gap-x-12 gap-y-6 grid-cols-3 mx-32 my-12">
+        <div className="grid grid-cols-1 gap-x-12 gap-y-6 md:grid-cols-2 xl:grid-cols-3 mx-32 my-12">
        {data.map((recipe) => (
             <RecipeCard imageId={recipe.imageId} title={recipe.title}></RecipeCard>
         ))}
