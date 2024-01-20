@@ -34,3 +34,19 @@ exports.getLatestRecipe = (req, res) => {
         console.log(err);
      })
 }
+
+exports.getallRecipe = (req, res) => {
+  Recipe.find().sort({ _id: -1})
+  .then(recipes => {
+    res.status(200).json({
+      recipes: recipes.map((recipe) => ({
+        title: recipe.title,
+        imageId: recipe.imageId
+      })),
+    });
+    console.log("fetched all recipes");
+  })
+  .catch((err) => {
+    console.log(err)
+  })
+}
